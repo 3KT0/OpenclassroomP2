@@ -1,0 +1,821 @@
+/* import polices */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('polices/static/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RalewayBold';
+  src: url('polices/static/Raleway-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*---------- Body ----------*/
+body {
+  box-sizing: content-box;
+  margin: auto;
+  font-size: 14px;
+  font-family: "Raleway";
+}
+
+/*---------- Nav ----------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 30px 40px 30px;
+}
+
+.logo_nav {
+  width: 100px; 
+}
+
+.list_nav {
+  display: flex;
+}
+
+.list_nav a {
+  padding: 40px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.list_nav a:hover,
+.list_nav a:focus {
+  border-top: #0065FC solid 2px;
+  color: #0065FC;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center
+}
+
+/*---------- Header ----------*/
+header {
+  margin: auto;
+  width: 96%;
+}
+
+header h1 {
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+header p {
+  padding-top: 0;
+}
+
+/*---------- Form ----------*/
+form {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/*---------- Îcon localisation ----------*/
+.fa-location-dot {
+  border-radius: 15px 0 0 15px;
+  padding: 15px 17px;
+  font-size: 16px;
+  background-color: #f2f2f2;    
+}
+
+/*---------- Input type search ----------*/
+.search_bar {
+  border: none;               
+  border: 1px solid #f2f2f2;
+  padding-left: 20px;
+  width: 220px;    
+}
+
+.search_bar::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  opacity: 1;                  
+}
+
+/*---------- Button desktop ----------*/
+.searchbutton {
+  font-family: 'RalewayBold',sans-serif;
+  font-weight: bold;
+  background-color: #0065FC;
+  color: white;
+  padding: 0.6em;
+  border: none;
+    border-radius: 0px 12px 12px 0px;
+    display: inherit;
+}
+
+/*---------- Button mobile ----------*/
+.searchbutton_mobile {
+    display: none !important;
+}
+
+/*---------- Section filters ----------*/
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 96%;
+}
+
+.filters h2 {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.filters ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none; 
+}
+
+.filters li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  border-left: none; 
+}
+
+.filters li:hover,
+.filters li:focus {
+  border-color: #Deebff;
+  cursor: pointer;
+  transition-duration: 500ms;
+  background-color: #deebff;
+  color: #0065fc;  
+}
+
+.filters i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #deebff;
+  color: #0065fc;      
+}
+
+.filters_text {
+  padding: 0 20px 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*---------- Îcon infos ----------*/
+.fa-info {
+  margin: auto;
+  border: #f2f2f2 2px solid;
+  border-radius: 100%;
+  padding: 4px 8px;
+  font-weight: 900;
+  color: #0065fc; 
+}
+
+/*---------- Title info -----------*/
+.title_info {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 96%;
+  font-weight: normal;  
+}
+
+/*---------- Main ----------*/
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 96%;
+}
+
+/*---------- Section popular ----------*/
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+  width: 32%;
+  background-color: #f2f2f2;
+}
+
+.popular h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.popular a {
+  text-decoration: none;
+  color: black;
+}
+
+.card_popular {
+  display: flex;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 1px white solid;
+  border-radius: 30px;
+  width: 90%;
+  height: 150px;
+  background-color: white;    
+}
+
+.card_popular:hover,
+.card_popular:focus {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.img_popular {
+  display: flex;
+  object-fit: cover;
+  border: white 1px solid;
+  border-radius: 30px 0 0 30px;
+  padding: 2px; 
+  width: 30%;
+  min-width: 30%;
+  height: auto;    
+}
+
+.text_popular {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10px;
+}
+
+.text_popular h3 {
+  margin: 10px 0 5px 0;
+  padding: 0;
+  width: 100%;  
+}
+
+.text_popular p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.rating_popular {
+  display: flex;
+  flex-direction: row;
+  justify-items: end;
+  margin: 55px 0 0 0;
+  color: #0065fc; 
+}
+
+.grey_star {
+  color: #f2f2f2;
+}
+
+/*--------- Article accomodations ----------*/
+.accommodation {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+  width: 65%;
+  height: 662px;
+  background-color: #f2f2f2;    
+}
+
+.accommodation h2 {
+  width: 90%;
+  margin: 15px 0 10px 30px;    
+}
+
+.accommodation a {
+  width: 33%;
+  text-decoration: none; 
+}
+
+.card_accommodations {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 2px white solid;
+  border-radius: 30px;
+  width: 86%;
+  height: 240px;
+  background-color: white;  
+}
+
+.img_accommodations {
+  object-fit: cover;
+  border: 2px white solid;
+  border-radius: 30px 30px 0 0;
+  height: 130px; 
+}
+
+.text_accommodations {
+  color: black;
+}
+
+.text_accommodations h3 {
+  margin: 5px 0 0 5px;
+}
+
+.text_accommodations p {
+  margin: 5px 0 10px 5px;
+}
+
+.rating_accommodations {
+  margin: 0 0 0 5px;
+  color: #0065fc;
+}
+
+.card_accommodations:hover,
+.card_accommodations:focus {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.pin_up {
+  padding-left: 30px;
+  font-weight: bold;
+  color: black;
+}
+/*----------- Article marseille ----------*/
+.marseille {
+  margin: auto;
+  width: 96%;
+}
+/*---------- Figure activities ----------*/
+.activites {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  font-weight: bold;  
+  color: black;    
+}
+
+.marseille h2 {
+  margin: auto;
+  margin-top: 50px;
+  width: 98%;
+}
+
+.card_port {                     /*-- Card "Vieux port" --*/
+  overflow: hidden;
+  margin: auto;
+  margin-left: 0;
+  border-radius: 30px;
+  box-shadow:0 1px 5px 5px #f2f2f2;
+  width: 23%;
+  height: 100%; 
+}
+
+.card_port:hover,
+.card_port:focus {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.img_port {
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+}
+
+figure.card_pomegues {             /*-- Card "Fort de Pomègues" --*/
+  margin-top: 0;
+}
+
+.card_pomegues {
+  overflow: hidden;
+  margin: auto;
+  border-radius: 30px;
+  width: 23%;
+  height: 50%;
+  box-shadow:0 1px 5px 5px #f2f2f2;
+}
+
+.card_pomegues:hover,
+.card_pomegues:focus {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.img_pomegues {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+
+.card_frioul {             /*-- Card "Îles de Frioul" --*/
+  margin-bottom: 0;
+}
+
+.card_frioul {
+  overflow: hidden;
+  margin: auto;
+  border-radius: 30px;
+  width: 23%;
+  height: 42%;
+  box-shadow:0 1px 5px 5px #f2f2f2;
+}
+
+.card_frioul:hover,
+.card_frioul:focus {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.img_frioul {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+}
+
+.card_calanques {                /*-- Card " Parc national des Calanques" --*/
+  overflow: hidden;
+  margin: auto;
+  margin-left: 30px;
+  border-radius: 30px;
+  width: 23%;
+  height: 100%;
+  box-shadow:0 1px 5px 5px #f2f2f2;
+}
+
+.card_calanques:hover,
+.card_calanques:focus {
+cursor: pointer;
+transform: scale(1.05);
+transition: 0.3s;
+}
+
+.img_calanques {
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+}
+
+figure.card_dame {               /*-- Card "Notre dame de la garde" --*/
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.card_dame {
+  overflow: hidden;
+  margin: auto;
+  border-radius: 30px;
+  width: 23%;
+  height: 42%;
+  box-shadow:0 1px 5px 5px #f2f2f2; 
+}
+
+.card_dame:hover,
+.card_dame:focus {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.img_dame {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+
+figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.card_longchamp {
+  overflow: hidden;
+  margin: auto;
+  border-radius: 30px;
+  width: 23%;
+  height: 50%;
+  box-shadow:0 1px 5px 5px #f2f2f2; 
+}
+
+.card_longchamp:hover,
+.card_longchamp:focus {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.img_longchamp {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+/*
+---------- Figcaption activities ----------*/
+.activites figcaption {
+  padding: 5px 0 10px 20px;
+}
+
+/*---------- Footer ----------*/
+footer {
+  display: flex;
+  margin-inline-end: initial;
+  margin-top: 60px;
+  padding: 60px 0 40px 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style-type: none;     
+}
+
+footer li {
+  padding: 5px 0 5px 0;
+}
+
+footer section {
+  margin-left: 50px;
+  margin-right: 340px;
+  width: max-content;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*---------- Responsive Tablet ----------*/
+@media screen and (max-width: 991px) {
+  /*---------- Main tablet ----------*/
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /*---------- Section popular tablet ----------*/
+  .popular {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .popular img {
+    width: 40%;
+  }
+
+  /*---------- Article accomodations tablet ----------*/ 
+  .accommodation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .accommodation h2 {
+    margin-bottom: 20px;
+  }
+
+  .accommodation a{
+    width: 48%;
+    margin: auto;
+  }
+
+  .accommodation figcaption{
+    margin: 10px 0 0 20px;
+  }
+
+  .accommodation .pin_up {
+    margin: 20px 0 10px 30px;
+  }
+
+  footer section {
+      margin-left: 50px;
+      margin-right: 110px;
+      width: max-content;
+  }
+}
+/*---------- Responsive mobile ----------*/
+@media screen and (max-width: 767px) {
+  /*---------- Nav  mobile ----------*/
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .list_nav {
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+
+  .list_nav a {
+    border-bottom: 2px solid #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;  
+  }
+
+  .list_nav li {
+    display: flex;
+    text-align: center;
+    width: 50%;  
+  }
+
+  .list_nav a:hover,
+  .list_nav a:focus {
+    border-top: none;
+    border-bottom-color: #0065fc;
+  }
+
+  /*---------- Header mobile ----------*/
+  header {
+    margin: auto;
+    width: 90%;
+  }
+
+  /*---------- Form mobile ----------*/
+  form {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  /*---------- Searchbar mobile ----------*/
+  .search_bar {
+    width: 70%;
+  }
+  /*---------- Button desktop ----------*/
+.searchbutton {
+    display: none;
+}
+  /*---------- Button mobile ----------*/
+.searchbutton_mobile {
+    background-color: #0065FC;
+    color: white;
+    padding: 0.6em;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    display: inherit !important;
+}
+.fa-magnifying-glass {
+  display: flex;
+  align-items: center;
+}
+  /*---------- Section filters mobile ----------*/
+  .filters {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  }
+  /*---------- Title info mobile ----------*/
+  .title_info {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  /*---------- Main mobile ----------*/
+  main {
+    width: 100%;
+  }
+  /*---------- Section popular mobile ----------*/
+  .popular {
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .img_popular {
+    width: 40%;
+  }
+  /*---------- Article accomodations mobile ----------*/
+  .accommodation {
+    margin: auto;
+    margin-bottom: 30px;
+    border: none;
+    width: 100%;
+    height: auto;
+    background-color: unset;   
+  }
+
+  .accommodation h2 {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .accommodation a {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+  }
+
+  .card_accommodations {
+    margin-bottom: 0;
+    width: 100%;
+    box-shadow:1px 1px 5px 5px #f2f2f2;
+  }
+
+  .accommodation figcaption {
+    margin: 10px 0 0 20px;
+  }
+
+.pin_up {
+    font-size: 18px;
+  }
+  /*---------- Article activites mobile ----------*/
+  .activites {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    width: 98%; 
+  }
+
+  .marseille h2 {
+    margin: auto;
+    padding-bottom: 20px;
+    width: 98%;
+  }
+
+  .activites figure {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 250px;
+    box-shadow:1px 1px 5px 5px #F2F2F2;
+  }
+
+  .activites figure:hover,
+  .activites figure:focus {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 10px 10px 10px gray;
+    }
+  
+  .img_port {
+    height: 80%;
+    }
+    
+  .img_pomegues {
+    height: 80%;
+    }
+
+  .img_frioul {
+    height: 80%;
+    }
+    
+  .img_calanques {
+    height: 80%;
+    }
+
+  .img_dame {
+    height: 80%;
+  }
+
+  .img_longchamp {
+    height: 80%;
+  }
+
+  /*---------- Footer mobile ----------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer ul {
+    margin-bottom: 30px;
+    width: max-content;
+  }
+}
